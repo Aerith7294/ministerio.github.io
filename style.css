@@ -1,0 +1,587 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    line-height: 1.5;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.60),
+            rgba(0, 0, 0, 0.60)
+        ),
+        url("fondo.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.contenedor {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 25px 18px 40px;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.encabezado {
+    text-align: center;
+    padding: 30px 10px 35px;
+
+    color: white;
+
+    text-shadow:
+        0 3px 7px rgba(0, 0, 0, 0.9);
+}
+
+.icono-iglesia {
+    width: 78px;
+    height: 78px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+
+    font-size: 31px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.5);
+}
+
+.encabezado h1 {
+    font-size: 38px;
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+
+    font-weight: 900;
+
+    letter-spacing: -0.5px;
+}
+
+.frase {
+    max-width: 560px;
+
+    margin: 0 auto;
+
+    color: #f5f5f5;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.seccion {
+    margin-bottom: 28px;
+}
+
+.seccion h2 {
+    font-size: 21px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    color: white;
+
+    font-weight: 900;
+
+    text-align: center;
+
+    text-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+.seccion h2 i {
+    font-size: 19px;
+}
+
+
+/* =========================
+   NUESTRA IGLESIA
+========================= */
+
+.presentacion {
+    background: rgba(0, 0, 0, 0.45);
+
+    padding: 24px 28px;
+
+    margin-left: 3px;
+    margin-right: 3px;
+
+    border-radius: 17px;
+
+    color: white;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.25);
+}
+
+.presentacion h2 {
+    margin-bottom: 15px;
+}
+
+.presentacion p {
+    max-width: 520px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    line-height: 1.65;
+
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.presentacion p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   DIRECCIÓN
+========================= */
+
+.boton-info {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 18px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    color: #222;
+
+    border-radius: 15px;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.28);
+
+    transition: transform 0.2s;
+
+    text-align: center;
+}
+
+.boton-info:hover {
+    transform: translateY(-2px);
+}
+
+.boton-info > i:first-child {
+    font-size: 24px;
+}
+
+.boton-info span {
+    flex: 1;
+
+    font-weight: 900;
+
+    text-align: center;
+}
+
+.boton-info small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #555;
+
+    font-weight: 700;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   HORARIOS
+========================= */
+
+.horarios {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+.horario {
+    background: rgba(255, 255, 255, 0.97);
+
+    padding: 18px 10px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.28);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.horario strong {
+    display: block;
+
+    font-size: 16px;
+
+    font-weight: 900;
+
+    margin-bottom: 7px;
+}
+
+.horario span {
+    color: #333;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    line-height: 1.35;
+
+    min-height: 35px;
+}
+
+.horario small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #666;
+
+    font-size: 13px;
+
+    font-weight: 900;
+}
+
+
+/* =========================
+   PEDIDO DE ORACIÓN
+========================= */
+
+.boton-oracion {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 18px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    color: #222;
+
+    border-radius: 15px;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.28);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+
+    text-align: center;
+}
+
+.boton-oracion:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 22px rgba(0, 0, 0, 0.35);
+}
+
+.boton-oracion > i:first-child {
+    font-size: 24px;
+}
+
+.boton-oracion span {
+    flex: 1;
+
+    font-weight: 900;
+
+    text-align: center;
+}
+
+.boton-oracion small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #555;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   EVENTO
+========================= */
+
+.evento-card {
+    background: rgba(255, 255, 255, 0.97);
+
+    overflow: hidden;
+
+    border-radius: 17px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.28);
+}
+
+.evento-card img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+}
+
+.evento-texto {
+    padding: 18px;
+
+    text-align: center;
+}
+
+.evento-texto h3 {
+    font-size: 21px;
+
+    margin-bottom: 8px;
+
+    font-weight: 900;
+}
+
+.evento-texto p {
+    color: #555;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   REDES
+========================= */
+
+.redes {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.red {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 16px 17px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    color: #222;
+
+    text-decoration: none;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.28);
+
+    transition: transform 0.2s;
+
+    text-align: center;
+}
+
+.red:hover {
+    transform: translateY(-2px);
+}
+
+.red span {
+    flex: 1;
+
+    font-weight: 900;
+
+    text-align: center;
+}
+
+.red > i:first-child {
+    width: 25px;
+
+    text-align: center;
+
+    font-size: 21px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 22px 10px 5px;
+
+    color: white;
+
+    font-weight: 700;
+
+    text-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+.footer-icono {
+    margin-bottom: 8px;
+}
+
+.footer-icono i {
+    color: white;
+
+    font-size: 18px;
+}
+
+footer p {
+    font-weight: 900;
+
+    margin-bottom: 4px;
+}
+
+footer small {
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 500px) {
+
+    .contenedor {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .encabezado {
+        padding-top: 25px;
+    }
+
+    .encabezado h1 {
+        font-size: 31px;
+    }
+
+    .frase {
+        font-size: 15px;
+    }
+
+    .presentacion {
+        padding: 22px 24px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .presentacion p {
+        font-size: 14px;
+    }
+
+    .horarios {
+        grid-template-columns: 1fr;
+    }
+
+    .horario {
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        padding: 15px 17px;
+
+        gap: 10px;
+    }
+
+    .horario strong {
+        margin: 0;
+
+        min-width: 75px;
+
+        text-align: left;
+    }
+
+    .horario span {
+        min-height: auto;
+
+        flex: 1;
+
+        text-align: center;
+    }
+
+    .horario small {
+        margin: 0;
+
+        min-width: 60px;
+
+        text-align: right;
+    }
+
+}
